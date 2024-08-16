@@ -1,6 +1,7 @@
 Flask Microservice providing the backend of a spreadsheet
 
-Can use a local DB (sqlite) or remote (firebase, API key required)
+Can use a local DB (sqlite) or remote (firebase, firebase name required as
+environment variable 'FBASE') [DEMO firebase DB='scbase-b2018']
 
 ----------------------------
 
