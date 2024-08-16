@@ -1,0 +1,7 @@
+cells.db
+__pycache__/
+.pytest_cache/
+tests/__pycache__/
+.coverage
+*.pyc
+firebase
