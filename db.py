@@ -7,13 +7,19 @@ import sqlite3
 import os
 import requests
 import json
+from dotenv import load_dotenv
 
+# Loading in firebase environment variable
 try:
-	FBASE = os.environ["FBASE"]
+	load_dotenv()
+	FBASE = os.getenv('FBASE')
 except:
 	FBASE = "0"
 
 FB_URL = "https://" + FBASE + "-default-rtdb.europe-west1.firebasedatabase.app/"
+
+print("TEST")
+print(FB_URL)
 
 def createTable(database):
 	"""

@@ -1,7 +1,7 @@
 Flask Microservice providing the backend of a spreadsheet
 
-Can use a local DB (sqlite) or remote (firebase, firebase name required as
-environment variable 'FBASE') [DEMO firebase DB='scbase-b2018']
+It can use a local DB (sqlite) or remote (firebase, firebase name required as
+environment variable 'FBASE' to be held in .env)
 
 ----------------------------
 
@@ -38,3 +38,10 @@ curl -s -X GET -o body -w "%{http_code}" localhost:3000/cells/B2
 Run unit testing:
 
 python -m pytest
+
+----------------------------
+
+Requirements:
+
+Python=3.9.13
+pip install -r requirements.txt
